@@ -1,0 +1,187 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+.banner {
+    background-color: #000;
+    overflow: hidden;
+}
+
+.banner-content {
+    display: block;
+    white-space: nowrap;
+    animation: bannermove 45s linear infinite;
+    font-size: 1em;
+    color: white;
+}
+
+.banner-content span {
+    padding: 0 2em;
+}
+
+@keyframes bannermove {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+header {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.logo {
+    max-width: 100%; /* Make logo responsive */
+}
+
+h1 {
+    font-size: 2em; /* Adjust font size for smaller screens */
+    margin: 20px 0; /* Adjust margin for tighter spaces */
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px; /* Reduced padding for smaller screens */
+}
+
+@media (max-width: 1400px) {
+    .panel {
+        margin: 10px;
+        padding: 15px; 
+        width: 90%; 
+        box-sizing: border-box;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative
+    }
+
+    .bubble, .category {
+        display: none; 
+    }
+    .image-container {
+        position: realtive;
+        top: 20px;
+        right: 20px;
+        border: 2px solid rgb(255, 255, 255);
+        width: 150px; 
+        height: 258px; 
+      }
+
+      .spacecraft-image {
+        width: 150px; 
+        height: 258px; 
+      }
+
+    .activity-value {
+        background-color: rgba(255, 0, 0, 0.5);
+        border-radius: 50%;
+        padding: 10px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.2em;
+    }
+
+    .more-detail {
+        background-color: rgba(255, 0, 0, 0.5);
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 20px; 
+        margin-bottom: 20px;
+        border-radius: 5px;
+        max-width: calc(100% - 150px); 
+        word-wrap: break-word; 
+    }
+}
+  
+  @media (min-width: 1401px) {
+    .panel {
+        background-color: #5d1919;
+        border: 2px solid white;
+        margin: 10px;
+        padding: 20px;
+        width: calc(33% - 20px); 
+        box-sizing: border-box;
+        position: relative;
+        height: 300px; 
+      }
+      
+    .bubble {
+        background-color: rgba(255, 0, 0, 0.5);
+        border-radius: 15px; 
+        padding: 5px 10px;
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        max-width: calc(100% - 150px); 
+        word-wrap: break-word; 
+      }
+    
+    .category {
+        font-size: 15px;
+        max-width: calc(100% - 150px); 
+        word-wrap: break-word; 
+      }
+      
+    
+    #spacecraft-bubble, #antenna-bubble {
+        max-width: calc(100% - 150px); 
+      }
+      
+      
+    .more-detail {
+        background-color: rgba(255, 0, 0, 0.5);
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 20px; 
+        border-radius: 5px;
+        max-width: calc(100% - 150px); 
+        word-wrap: break-word; 
+      }
+      
+    .image-container {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border: 2px solid rgb(255, 255, 255);
+        width: 150px; 
+        height: 258px; 
+      }
+      
+    .spacecraft-image {
+        width: 150px; 
+        height: 258px; 
+      }
+      
+    .activity-value {
+        background-color: rgba(255, 0, 0, 0.5);
+        border-radius: 50%;
+        padding: 10px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.2em;
+      }
+      
+    
+    html {
+        overflow-x: hidden;
+      }
+  }
+  
