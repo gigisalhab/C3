@@ -34,12 +34,12 @@ header {
 }
 
 .logo {
-    max-width: 100%; /* Make logo responsive */
+    max-width: 100%; 
 }
 
 h1 {
-    font-size: 2em; /* Adjust font size for smaller screens */
-    margin: 20px 0; /* Adjust margin for tighter spaces */
+    font-size: 2em; 
+    margin: 20px 0; 
 }
 
 .dashboard {
@@ -180,9 +180,6 @@ h1 {
         left: 50%;
         transform: translateX(-50%);
         font-size: 1.2em;
-      }
-      
-    
-    
+      }   
   }
   
