@@ -47,7 +47,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 10px; /* Reduced padding for smaller screens */
+    padding: 10px; 
 }
 
 @media (max-width: 1400px) {
@@ -66,8 +66,8 @@ h1 {
     .bubble, .category {
         display: none; 
     }
+
     .image-container {
-        position: realtive;
         top: 20px;
         right: 20px;
         border: 2px solid rgb(255, 255, 255);
@@ -75,7 +75,7 @@ h1 {
         height: 258px; 
       }
 
-      .spacecraft-image {
+    .spacecraft-image {
         width: 150px; 
         height: 258px; 
       }
@@ -145,13 +145,16 @@ h1 {
         background-color: rgba(255, 0, 0, 0.5);
         color: #ffffff;
         border: none;
-        padding: 10px 20px;
+        padding: 10px 10px;
         font-weight: bold;
         cursor: pointer;
         margin-top: 20px; 
+        margin-bottom: 20px;
         border-radius: 5px;
-        max-width: calc(100% - 150px); 
+        max-width: calc(100% - 280px); 
         word-wrap: break-word; 
+        display: block;
+
       }
       
     .image-container {
@@ -180,8 +183,6 @@ h1 {
       }
       
     
-    html {
-        overflow-x: hidden;
-      }
+    
   }
   
